@@ -1,26 +1,18 @@
 @font-face {
-    font-family: shonenpunk;
-    src: url('../font/shonen-punk/ShonenPunk\ custom.ttf');
+    font-family: chalk;
+    src: url('../font/Chalkboard.ttf');
 }
 @font-face {
-    font-family: shonenpunkbold;
-    src: url('../font/shonen-punk/ShonenPunk\ custom\ bold.ttf');
+    font-family: chalkbold;
+    src: url('../font/ChalkboardBold.ttf');
 }
 @font-face {
-    font-family: punkboy;
-    src: url('../font/punkboy/punkboy_tbs.ttf');
+    font-family: chineserock;
+    src: url('../font/chinese\ rocks\ rg.ttf');
 }
 @font-face {
-    font-family: punkboybold;
-    src: url('../font/punkboy/punkboy_tbs_bold.ttf');
-}
-@font-face {
-    font-family: wit;
-    src: url('../font/whatever_it_takes/whatever\ it\ takes.ttf');
-}
-@font-face {
-    font-family: witbold;
-    src: url('../font/whatever_it_takes/whatever\ it\ takes\ bold.ttf');
+    font-family: GABR;
+    src: url('../font/GABRWFFR.TTF');
 }
 *{
     margin:0;
@@ -28,11 +20,22 @@
 }
 a{
     text-decoration: none!important;
-    color:#c20e1a!important;
 }
 p{
     margin-top:20px;
     margin-bottom:20px;
+}
+.font-chalk{
+    font-family: chalk!important;
+}
+.font-chalkbold{
+    font-family: chalkbold!important;
+}
+.font-chineserock{
+    font-family: chineserock!important;
+}
+.font-gabr{
+    font-family: GABR!important;
 }
 body{
     margin:0;
@@ -46,4 +49,117 @@ body{
 }
 .pos-absolute{
     position: absolute;
+}
+/*color*/
+.text-yellow{color:#e5b363!important;}.bg-yellow{background:#e5b363!important;}
+.text-peach{color:#c3846a!important;}.bg-peach{background:#c3846a!important;}
+.text-redbata{color:#8d3812!important;}.bg-redbata{background:#8d3812!important;}
+.text-brown{color:#5c310f!important;}.bg-brown{background:#5c310f!important;}
+.text-tosca{color:#90ac94!important;}.bg-tosca{background:#90ac94!important;}
+/*Zonasi 1*/
+#sec-1{
+}
+.sky{
+    height:70vh;
+}
+.ground{
+    height:30vh;
+}
+.cover-title{
+    padding-top:5vh;
+    font-size:5vh;
+    display:block;
+    text-align:center;
+}
+.awan{
+    width:150px;
+}
+.awan1{
+    top:3vh;
+    left:40vh;
+}
+.awan2{
+    top:13vh;
+    right:40vh;
+}
+.gedung{
+    width:100vh;
+    left:47vh;
+    bottom:-5vh;
+    z-index: 1;
+}
+.jalan{
+    left:60.5vh;
+    height:25vh;
+    bottom:0;
+}
+.pagar{
+    display:block;
+    height:5vh;
+    bottom:2.5vh;
+    z-index:1
+}
+.pohon{
+    width:10vh;
+}
+.pohon1{
+    top:-10vh;
+    left:35vh;
+}
+.pohon2{
+    top:0vh;
+    left:45vh;
+    z-index:2;
+}
+.pohon3{
+    bottom:5vh;
+    left:40vh;
+}
+.pohon4{
+    top:-10vh;
+    right:35vh;
+}
+.pohon5{
+    top:0vh;
+    right:45vh;
+    z-index:2;
+}
+.pohon6{
+    bottom:5vh;
+    right:40vh;
+}
+.pelajar{
+    width:3vh;
+}
+.pelajar1{
+    width:2vh!important;
+    z-index:2;
+    bottom:24vh;
+    right:90vh;
+}
+.pelajar2{
+    z-index:2;
+    bottom:18vh;
+    left:87vh;
+}
+.pelajar3{
+    z-index:2;
+    bottom:15vh;
+    right:80vh;
+}
+.pelajar4{
+    z-index:2;
+    bottom:8vh;
+    left:85vh;
+    
+}
+.pelajar5{
+    bottom:5vh;
+    right:86vh;
+}
+.logo-hai{
+    z-index:3;
+    width:8vh;
+    bottom:7vh;
+    left:94vh;
 }
