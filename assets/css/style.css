@@ -68,9 +68,19 @@ p{
         font-family: chalkbold;
         font-size:1.2em;
     }
+    img.doodle,img.doodle3,img.doodle4,img.doodle6{
+        display:none!important;
+        visibility: hidden!important;
+    }
 }
 .martop{
     margin-top:5%;
+}
+.marbot{
+    margin-bottom:5%;
+}
+.padtop5{
+    padding-top:5%;
 }
 .padtop{
     padding-top:10%;
@@ -113,7 +123,7 @@ p{
     }
     .cover-title{
         padding-top:5vh;
-        font-size:5vh;
+        font-size:7vh;
         display:block;
         text-align:center;
     }
@@ -299,7 +309,7 @@ p{
         left:26vh;
     }
 }
-/*Zonasi 2*/
+/*Zonasi 2 & Zonasi 3*/
 @media only screen and (min-width: 481px) {
     .sec-2{
     }
@@ -318,6 +328,38 @@ p{
     }
     .title-notes{
         font-size:6vh;
+    }
+    .doodle{
+        height:10vh;
+    }
+    .doodle3{
+        width:13vh;
+    }
+    .pensil2{
+        right:8%;
+        top:10%;
+    }
+    .kacamata2{
+        bottom:0;
+    }
+    .gunting2{
+        top:30%;
+    }
+    .buku2{
+        right:8%;
+        top:60%;
+    }
+    .xy2{
+        right:10%;
+        top:30%;
+    }
+    .dadu2{
+        right:10%;
+        bottom:20%;
+    }
+    .calc2{
+        left:8%;
+        bottom:20%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -342,4 +384,142 @@ p{
     .title-notes{
         font-size:3vh;
     }
+}
+/*Zonasi 4 & Zonasi 5*/
+#sec-4{
+    padding-bottom:15%;
+}
+#sec-5{
+    padding-bottom:5%;
+    /* padding-top:10%; */
+}
+.cover-sec-4{
+    padding-top:10%;
+    padding-bottom:5%;
+    text-align: center;
+    color:#FFF;
+    font-size:5vh;
+}
+.box-white{
+    border-radius:8px;
+    text-align:left;
+    background:#FFF;
+    padding:3%!important;
+}
+.yellow-note{
+    width:100%;
+    background:url('../images/5/5_kertaskuning.png') no-repeat left top;
+    height:70vh;
+}
+.minuss{
+    margin-top:-10%!important;
+}
+@media only screen and (min-width: 481px) {
+    .cover-sec-4{
+        padding-top:10%;
+        padding-bottom:5%;
+        text-align: center;
+        color:#FFF;
+        font-size:7vh;
+    }
+    .proscontra{
+        padding:10px;
+        display: block;
+        text-align:center;
+        font-size:4vh;
+    }
+    .xy4{
+        top:31%;
+        right:5%;
+    }
+    .magnet4{
+        top:18%;
+        left:2%;
+    }
+    .kacamata4{
+        top:45%;
+        right:2%;
+    }
+    .garisanbulet4{
+        top:70%;
+        left:2%;
+    }
+    .erlemeyer4{
+        top:91%;
+        right:2%;
+    }
+    .doodle4{
+        width:18vh;
+    }
+    .title-sec-5{
+        font-size:7vh;
+        padding-top:3%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .cover-sec-4{
+        padding-top:25%;
+        padding-bottom:5%;
+        text-align: center;
+        color:#FFF;
+        font-size:4vh;
+    }
+    .proscontra{
+        padding:10px;
+        display: block;
+        text-align:center;
+        font-size:3vh;
+    }
+    .title-sec-5{
+        font-size:4vh;
+        padding:1%;
+    }
+}
+/* Zonasi 6 */
+#sec-6{
+    padding:5% 0;
+}
+.cover-sec-6 img{
+    width:100%;
+}
+.title-sec-6{
+    padding:3%;
+    font-size:7vh;
+}
+.kertas{
+    width:100%;
+}
+.doodle6{
+    height:10vh;
+}
+.pensil6{
+    top:20%;
+    left:1%;
+}
+.buku6{
+    top:1%;
+    right:6%;
+}
+.garissegitiga6{
+    top:20%;
+    left:1%;
+}
+.pena6{
+    top:5%;
+    right:5%;
+}
+.magnet6{
+    top:20%;
+}
+.dadu6{
+    top:5%;
+    right:3%;
+}
+.calc6{
+    top:20%;
+    left:1%;
+}
+.gunting6{
+    top:20%;
+    right:3%;
 }
