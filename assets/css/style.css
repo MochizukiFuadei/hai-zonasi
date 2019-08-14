@@ -50,8 +50,21 @@ body{
 .pos-absolute{
     position: absolute;
 }
+.caption{
+    font-family: chalkbold;
+    font-size:1.8em;
+}
+.martop{
+    margin-top:5%;
+}
+.padtop{
+    padding-top:10%;
+}
+.padbot{
+    padding-bottom:15%;
+}
 /*color*/
-.text-yellow{color:#e5b363!important;}.bg-yellow{background:#e5b363!important;}
+.text-yellow{color:#e4b262!important;}.bg-yellow{background:#e4b262!important;}
 .text-peach{color:#c3846a!important;}.bg-peach{background:#c3846a!important;}
 .text-redbata{color:#8d3812!important;}.bg-redbata{background:#8d3812!important;}
 .text-brown{color:#5c310f!important;}.bg-brown{background:#5c310f!important;}
@@ -59,107 +72,234 @@ body{
 /*Zonasi 1*/
 #sec-1{
 }
-.sky{
-    height:70vh;
+@media only screen and (min-width: 481px) {
+    .sky{
+        height:70vh;
+    }
+    .ground{
+        height:30vh;
+    }
+    .gedung{
+        width:100vh;
+        left:47vh;
+        bottom:-5vh;
+        z-index: 1;
+    }
+    .jalan{
+        left:60.5vh;
+        height:25vh;
+        bottom:0;
+    }
+    .pagar{
+        display:block;
+        height:5vh;
+        bottom:2vh;
+        z-index:1
+    }
+    .cover-title{
+        padding-top:5vh;
+        font-size:5vh;
+        display:block;
+        text-align:center;
+    }
+    .awan{
+        width:150px;
+    }
+    .awan1{
+        top:3vh;
+        left:40vh;
+    }
+    .awan2{
+        top:13vh;
+        right:40vh;
+    }
+    .pohon{
+        width:10vh;
+    }
+    .pohon1{
+        top:-10vh;
+        left:35vh;
+    }
+    .pohon2{
+        top:0vh;
+        left:45vh;
+        z-index:2;
+    }
+    .pohon3{
+        bottom:5vh;
+        left:40vh;
+    }
+    .pohon4{
+        top:-10vh;
+        right:35vh;
+    }
+    .pohon5{
+        top:0vh;
+        right:45vh;
+        z-index:2;
+    }
+    .pohon6{
+        bottom:5vh;
+        right:40vh;
+    }
+    .pelajar{
+        width:3vh;
+    }
+    .pelajar1{
+        width:2vh!important;
+        z-index:2;
+        bottom:24vh;
+        right:90vh;
+    }
+    .pelajar2{
+        z-index:2;
+        bottom:18vh;
+        left:87vh;
+    }
+    .pelajar3{
+        z-index:2;
+        bottom:15vh;
+        right:80vh;
+    }
+    .pelajar4{
+        z-index:2;
+        bottom:8vh;
+        left:85vh;
+        
+    }
+    .pelajar5{
+        bottom:5vh;
+        right:86vh;
+    }
+    .logo-hai{
+        z-index:3;
+        width:8vh;
+        bottom:7vh;
+        left:94vh;
+    }
 }
-.ground{
-    height:30vh;
+@media only screen and (max-width: 480px) {
+    .sky{
+        height:50vh;
+    }
+    .ground{
+        height:19vh;
+    }
+    .gedung{
+        width:40vh;
+        left:8vh;
+        bottom:-5vh;
+        z-index: 1;
+    }
+    .jalan{
+        left: 8vh;
+        height: 14vh;
+        bottom:0;
+    }
+    .pagar{
+        display:block;
+        /* height:vh; */
+        bottom:0;
+        z-index:4;
+    }
+    .cover-title{
+        padding-top:10vh;
+        font-size:3.4vh;
+        display:block;
+        text-align:center;
+    }
+    .awan{
+        width:75px;
+    }
+    .awan1{
+        top:3vh;
+        left:5vh;
+    }
+    .awan2{
+        top:20vh;
+        right:5vh;
+    }
+    .pohon{
+        width:6vh;
+    }
+    .pohon1{
+        top:-5vh;
+        left:3vh;
+    }
+    .pohon2{
+        top:3vh;
+        left:45vh;
+        z-index:2;
+    }
+    .pohon3{
+        bottom:1vh;
+        left:40vh;
+    }
+    .pohon4{
+        top:-5vh;
+        right:3vh;
+    }
+    .pohon5{
+        top:3vh;
+        right:45vh;
+        z-index:2;
+    }
+    .pohon6{
+        bottom:1vh;
+        right:40vh;
+    }
+    .pelajar{
+        width:1.8vh;
+    }
+    .pelajar1{
+        width: 1.5vh!important;
+        z-index: 2;
+        bottom: 13vh;
+        right: 24vh;
+    }
+    .pelajar2{
+        z-index:2;
+        bottom:9vh;
+        left:20vh;
+    }
+    .pelajar3{
+        z-index:2;
+        bottom:8vh;
+        right:20vh;
+    }
+    .pelajar4{
+        z-index:2;
+        bottom:3vh;
+        left:22vh;
+        
+    }
+    .pelajar5{
+        bottom:2vh;
+        right:22vh;
+    }
+    .logo-hai{
+        z-index:3;
+        width:4vh;
+        bottom:5vh;
+        left:26vh;
+    }
 }
-.cover-title{
-    padding-top:5vh;
-    font-size:5vh;
-    display:block;
-    text-align:center;
+/*Zonasi 2*/
+.sec-2{
 }
-.awan{
-    width:150px;
+.sec-intros{
+    padding:20px 0;
 }
-.awan1{
-    top:3vh;
-    left:40vh;
+.box-title{
+    padding:2vh;
+    background:#c3846a;
+    width:47%;
 }
-.awan2{
-    top:13vh;
-    right:40vh;
+.notes{
+    background:url('../images/2/2_notes.png') no-repeat top center;
+    background-size:100%;
+    margin-bottom:-10%;
 }
-.gedung{
-    width:100vh;
-    left:47vh;
-    bottom:-5vh;
-    z-index: 1;
-}
-.jalan{
-    left:60.5vh;
-    height:25vh;
-    bottom:0;
-}
-.pagar{
-    display:block;
-    height:5vh;
-    bottom:2.5vh;
-    z-index:1
-}
-.pohon{
-    width:10vh;
-}
-.pohon1{
-    top:-10vh;
-    left:35vh;
-}
-.pohon2{
-    top:0vh;
-    left:45vh;
-    z-index:2;
-}
-.pohon3{
-    bottom:5vh;
-    left:40vh;
-}
-.pohon4{
-    top:-10vh;
-    right:35vh;
-}
-.pohon5{
-    top:0vh;
-    right:45vh;
-    z-index:2;
-}
-.pohon6{
-    bottom:5vh;
-    right:40vh;
-}
-.pelajar{
-    width:3vh;
-}
-.pelajar1{
-    width:2vh!important;
-    z-index:2;
-    bottom:24vh;
-    right:90vh;
-}
-.pelajar2{
-    z-index:2;
-    bottom:18vh;
-    left:87vh;
-}
-.pelajar3{
-    z-index:2;
-    bottom:15vh;
-    right:80vh;
-}
-.pelajar4{
-    z-index:2;
-    bottom:8vh;
-    left:85vh;
-    
-}
-.pelajar5{
-    bottom:5vh;
-    right:86vh;
-}
-.logo-hai{
-    z-index:3;
-    width:8vh;
-    bottom:7vh;
-    left:94vh;
+.title-notes{
+    font-size:6vh;
 }
