@@ -482,9 +482,18 @@ p{
 .cover-sec-6 img{
     width:100%;
 }
-.title-sec-6{
-    padding:3%;
-    font-size:7vh;
+@media only screen and (min-width: 481px) {
+    .title-sec-6{
+        padding:3%;
+        font-size:7vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title-sec-6{
+        padding:3%;
+        font-size:4vh;
+    }
 }
 .kertas{
     width:100%;
@@ -532,3 +541,34 @@ p{
     z-index: 2;
 }
 /* Zonasi 7 */
+#sec-7{
+    padding:5% 0;
+}
+.isi{
+    top:10%;
+}
+@media only screen and (min-width: 481px) {
+    .title-sec-7{
+        padding:3%;
+        font-size:7vh;
+    }
+    .buttons{
+        width:20%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title-sec-7{
+        padding:3%;
+        font-size:3vh;
+    }
+    .buttons{
+        width:40%;
+    }
+    .doodle7{
+        width:50%!important;
+    }
+    .hptext{
+        font-size:12px;
+    }
+}
