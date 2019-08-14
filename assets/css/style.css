@@ -495,31 +495,40 @@ p{
 .pensil6{
     top:20%;
     left:1%;
+    z-index: 2;
 }
 .buku6{
     top:1%;
     right:6%;
+    z-index: 2;
 }
 .garissegitiga6{
     top:20%;
     left:1%;
+    z-index: 2;
 }
 .pena6{
     top:5%;
     right:5%;
+    z-index: 2;
 }
 .magnet6{
     top:20%;
+    z-index: 2;
 }
 .dadu6{
     top:5%;
     right:3%;
+    z-index: 2;
 }
 .calc6{
     top:20%;
     left:1%;
+    z-index: 2;
 }
 .gunting6{
     top:20%;
     right:3%;
+    z-index: 2;
 }
+/* Zonasi 7 */
