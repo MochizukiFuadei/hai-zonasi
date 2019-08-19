@@ -55,6 +55,9 @@ p{
         font-family: chalkbold;
         font-size:1.8em;
     }
+    .resimg{
+        width:80%!important;
+    }
 }
 @media only screen and (max-width: 480px) {
     body{
@@ -71,6 +74,10 @@ p{
     img.doodle,img.doodle3,img.doodle4,img.doodle6,img.doodle8{
         display:none!important;
         visibility: hidden!important;
+    }
+    .resimg{
+        width:100%!important;
+        margin-bottom:20px;
     }
 }
 .martop{
