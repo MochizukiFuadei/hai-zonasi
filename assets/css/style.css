@@ -617,3 +617,8 @@ p{
 #footer{
     padding:3% 0;
 }
+.modal-transparent{
+    background:none!important;
+    box-shadow:none!important;
+    overflow-y: inherit!important;
+}
