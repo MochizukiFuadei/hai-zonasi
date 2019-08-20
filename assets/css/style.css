@@ -620,5 +620,5 @@ p{
 .modal-transparent{
     background:none!important;
     box-shadow:none!important;
-    overflow-y: inherit!important;
+    /* overflow-y: inherit!important; */
 }
