@@ -112,21 +112,21 @@ p{
         height:30vh;
     }
     .gedung{
-        width:100vh;
-        left:47vh;
-        bottom:-5vh;
+        width:50%;
+        left:25%;
+        bottom:-7%;
         z-index: 1;
     }
     .jalan{
-        left:60.5vh;
-        height:25vh;
+        left:31%;
+        width:38%;
         bottom:0;
     }
     .pagar{
         display:block;
         height:5vh;
-        bottom:2vh;
-        z-index:1
+        bottom:-2vh;
+        z-index:4
     }
     .cover-title{
         padding-top:5vh;
@@ -146,68 +146,72 @@ p{
         right:40vh;
     }
     .pohon{
-        width:10vh;
+        width:6%;
     }
     .pohon1{
-        top:-10vh;
-        left:35vh;
+        top: -15%;
+        left: 20%;
+        z-index:2;
     }
     .pohon2{
-        top:0vh;
-        left:45vh;
+        top: 10%;
+        left: 25%;
         z-index:2;
     }
     .pohon3{
-        bottom:5vh;
-        left:40vh;
+        top:40%;
+        left:22%;
+        z-index:2;
     }
-    .pohon4{
-        top:-10vh;
-        right:35vh;
+    .pohon4{    
+        top: -15%;
+        right: 20%;
+        z-index:2;
     }
-    .pohon5{
-        top:0vh;
-        right:45vh;
+    .pohon5{    
+        top: 10%;
+        right: 25%;
         z-index:2;
     }
     .pohon6{
-        bottom:5vh;
-        right:40vh;
+        top:40%;
+        right:22%;
+        z-index:2;
     }
     .pelajar{
-        width:3vh;
+        width:2%;
     }
-    .pelajar1{
-        width:2vh!important;
-        z-index:2;
-        bottom:24vh;
-        right:90vh;
+    .pelajar1{    
+        width: 1.5%!important;
+        z-index: 2;
+        bottom: 80%;
+        right: 46%;
     }
     .pelajar2{
         z-index:2;
-        bottom:18vh;
-        left:87vh;
+        bottom:58%;
+        left:42%;
     }
     .pelajar3{
         z-index:2;
-        bottom:15vh;
-        right:80vh;
+        bottom:56%;
+        right:42%;
     }
     .pelajar4{
         z-index:2;
-        bottom:8vh;
-        left:85vh;
+        bottom:30%;
+        left:43%;
         
     }
     .pelajar5{
-        bottom:5vh;
-        right:86vh;
+        bottom:20%;
+        right:43%;
     }
     .logo-hai{
         z-index:3;
-        width:8vh;
-        bottom:7vh;
-        left:94vh;
+        width: 6%;
+        bottom: 25%;
+        left: 47%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -218,9 +222,9 @@ p{
         height:19vh;
     }
     .gedung{
-        width:40vh;
-        left:8vh;
-        bottom:-5vh;
+        width:90%;
+        left:5%;
+        bottom:-10%;
         z-index: 1;
     }
     .jalan{
@@ -257,6 +261,7 @@ p{
     .pohon1{
         top:-5vh;
         left:3vh;
+        z-index:2;
     }
     .pohon2{
         top:3vh;
@@ -266,10 +271,12 @@ p{
     .pohon3{
         bottom:1vh;
         left:40vh;
+        z-index:2;
     }
     .pohon4{
         top:-5vh;
         right:3vh;
+        z-index:2;
     }
     .pohon5{
         top:3vh;
@@ -279,6 +286,7 @@ p{
     .pohon6{
         bottom:1vh;
         right:40vh;
+        z-index:2;
     }
     .pelajar{
         width:1.8vh;
@@ -622,3 +630,76 @@ p{
     box-shadow:none!important;
     /* overflow-y: inherit!important; */
 }
+.zonasi-country {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .zonasi-country:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal-custom {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5)!important; /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content-custom {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 700px;
+  }
+  
+  
+  /* Add Animation */
+  .modal-content-custom {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content-custom {
+      width: 100%;
+    }
+  }

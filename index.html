@@ -270,18 +270,18 @@
       </div>
       <div class="row martop">
         <div class="col l5 m5 s10 offset-l1 offset-m1 offset-s1 center-align">
-          <a href="#zonasi_inggris" class="waves-effect waves-light modal-trigger animated wow tada"><img src="assets/images/5/inggrisbutton.png" class="resimg"></a>
+          <a id="button_zonasi_inggris" class="zonasi-country animated wow tada"><img src="assets/images/5/inggrisbutton.png" class="resimg "></a>
         </div>
         <div class="col l5 m5 s10  offset-s1 center-align">
-          <a href="#zonasi_jepang" class="waves-effect waves-light modal-trigger animated wow tada"><img src="assets/images/5/jepangbutton.png" class="resimg"></a>
+          <a id="button_zonasi_jepang" class="zonasi-country animated wow tada"><img src="assets/images/5/jepangbutton.png" class="resimg "></a>
         </div>
       </div>
       <div class="row">
         <div class="col l5 m5 s10 offset-l1 offset-m1 offset-s1 center-align">
-          <a href="#zonasi_australia" class="waves-effect waves-light modal-trigger animated wow tada"><img src="assets/images/5/australiabutton.png" class="resimg"></a>
+          <a id="button_zonasi_australia" class="zonasi-country animated wow tada"><img src="assets/images/5/australiabutton.png" class="resimg "></a>
         </div>
         <div class="col l5 m5 s10  offset-s1 center-align">
-          <a href="#zonasi_belanda" class="waves-effect waves-light modal-trigger animated wow tada"><img src="assets/images/5/belandabutton.png" class="resimg"></a>
+          <a id="button_zonasi_belanda" class="zonasi-country animated wow tada"><img src="assets/images/5/belandabutton.png" class="resimg "></a>
         </div>
       </div>
     </div>
@@ -440,32 +440,36 @@
   </section>
 
   <div id="chatbureno" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+      <div class="modal-content center-align">
           <img src="assets/images/7/7_chatibureno.png" class="responsive-img">
       </div>
   </div>
   <div id="chatbunisa" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+      <div class="modal-content center-align">
           <img src="assets/images/7/7_chatibuannisa.png" class="responsive-img">
       </div>
   </div>
-  <div id="zonasi_inggris" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+  <div id="zonasi_inggris" class="modal-custom center-align">
+      <div class="modal-content-custom center-align">
+          <span class="close">&times;</span>
           <img src="assets/images/5/5_kertasinggris.png" width="100%">
       </div>
   </div>
-  <div id="zonasi_jepang" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+  <div id="zonasi_jepang" class="modal-custom center-align">
+      <div class="modal-content-custom center-align">
+          <span class="close">&times;</span>
           <img src="assets/images/5/5_kertasjepang.png" width="100%">
       </div>
   </div>
-  <div id="zonasi_australia" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+  <div id="zonasi_australia" class="modal-custom center-align">
+      <div class="modal-content-custom center-align">
+          <span class="close">&times;</span>
           <img src="assets/images/5/5_kertasaustralia.png" width="100%">
       </div>
   </div>
-  <div id="zonasi_belanda" class="modal center-align modal-transparent">
-      <div class="modal-body center-align">
+  <div id="zonasi_belanda" class="modal-custom center-align">
+      <div class="modal-content-custom center-align">
+          <span class="close">&times;</span>
           <img src="assets/images/5/5_kertasbelanda.png" width="100%">
       </div>
   </div>
@@ -480,6 +484,63 @@
               $('.modal').modal();
                 $('.carousel').carousel();
             });
-            new WOW().init();</script>
+            new WOW().init();
+            
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("button_zonasi_inggris");
+            img.onclick = function(){
+              // Get the modal
+              var modal = document.getElementById("zonasi_inggris");
+              modal.style.display = "block";
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() { 
+                modal.style.display = "none";
+              }
+            }
+            var img = document.getElementById("button_zonasi_jepang");
+            img.onclick = function(){
+              // Get the modal
+              var modal = document.getElementById("zonasi_jepang");
+              modal.style.display = "block";
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[1];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() { 
+                modal.style.display = "none";
+              }
+            }
+            var img = document.getElementById("button_zonasi_australia");
+            img.onclick = function(){
+              // Get the modal
+              var modal = document.getElementById("zonasi_australia");
+              modal.style.display = "block";
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[2];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() { 
+                modal.style.display = "none";
+              }
+            }
+            var img = document.getElementById("button_zonasi_belanda");
+            img.onclick = function(){
+              // Get the modal
+              var modal = document.getElementById("zonasi_belanda");
+              modal.style.display = "block";
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[3];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() { 
+                modal.style.display = "none";
+              }
+            }
+
+            </script>
 </body>
 </html>
